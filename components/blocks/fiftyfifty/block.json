@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "fiftyfifty",
+	"version": "0.1.0",
+	"title": "Fifty Fifty Block",
+	"category": "dps_blocks",
+	"icon": "columns",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false,
+        "jsx": true
+	},
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+	"textdomain": "fifty-fifty",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

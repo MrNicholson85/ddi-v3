@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "project",
+	"version": "0.1.0",
+	"title": "My Projects",
+	"category": "dps_blocks",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false,
+        "jsx": true
+	},
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+	"textdomain": "project",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
