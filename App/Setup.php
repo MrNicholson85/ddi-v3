@@ -20,10 +20,6 @@ class Setup implements WordPressHooks
         add_action('init', [$this, 'registerMenus']);
         add_action('widgets_init', [$this, 'registerSidebars'], 5);
         add_action('upload_mimes', [$this, 'ccMimeTypes']);
-        add_action('ddiBlock', [$this, 'register_acf_blocks']);
-        add_action('initBlocks', [$this, 'loadBlocks'], 5);
-        add_filter('loadAcf', [$this, 'loadAcfFieldGroup']);
-        add_filter('blockCat', [$this, 'blockCategories']);
     }
 
     /**

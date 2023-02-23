@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div class="uk-container uk-container-large">
     <div uk-grid>
-        <div id="primary" class="uk-width-3-4@s">
+        <div id="primary" class="uk-width-1-1@s">
             <?php
             if (have_posts()) {
                 while (have_posts()) {
@@ -30,8 +30,6 @@ get_header(); ?>
             }
             ?>
         </div>
-
-        <?php get_sidebar(); ?>
     </div>
 </div>
 
