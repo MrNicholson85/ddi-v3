@@ -1,6 +1,5 @@
-import UIkit from '../../../assets/js/theme/UIkit';
+import UIkit from '../../../build/scripts/theme-scripts.min';
 
-console.log('hello');
 const initSlideshows = () => {
   const slideshows = UIkit.slideshow('.uk-slideshow', {});
 };

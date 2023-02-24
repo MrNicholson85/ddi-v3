@@ -70,6 +70,11 @@ add_action('after_setup_theme', function () {
     // Add Post Thumbnail Image sizes and support
     add_theme_support('post-thumbnails');
 
+    //Add Gutenburg Theme Support
+    add_theme_support('responsive-embeds');
+    add_theme_support('wp-block-styles');
+    add_theme_support('editor-styles');
+
     // Switch default core markup to output valid HTML5.
     add_theme_support('html5', [
         'search-form',

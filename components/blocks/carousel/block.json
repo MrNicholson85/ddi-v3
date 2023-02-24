@@ -2,7 +2,7 @@
     "name": "carousel",
     "title": "Carousel",
     "description": "A custom Carousel block.",
-    "style": [ "file:/carousel.css" ],
+    "style": "/build/styles/editor-styles.min.css",
     "category": "dps_blocks",
     "icon": "slides",
     "keywords": ["carousel", "slider"],
@@ -34,5 +34,8 @@
             "type": "string",
             "default": "tertiary"
         }
-    }
+    },
+    "textdomain": "fifty-fifty",
+	"editorScript": "file:./carousel.js",
+	"editorStyle": "file:./carousel.css"
 }

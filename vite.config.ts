@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import VitePluginBrowserSync from 'vite-plugin-browser-sync';
 
 export default defineConfig({
   build: {
@@ -21,7 +22,16 @@ export default defineConfig({
     },
     sourcemap: true,
   },
-  plugins: [],
+  plugins: [
+    VitePluginBrowserSync({
+      bs: {
+        ui: {
+          port: 8080
+        },
+        notify: false
+      }
+    })
+  ],
   resolve: {
     alias: {
       'uikit-util': 'uikit/src/js/util',

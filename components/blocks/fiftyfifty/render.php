@@ -25,7 +25,5 @@ $carousel = ACF::getRowsLayout('carousel', $data);
 			$sliderImage,
 		);
 	}
-
-	esc_html_e('Fifty Fifty Block – hello from a dynamic block!', 'example-dynamic');
 	?>
 </div>
