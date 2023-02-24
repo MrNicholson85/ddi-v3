@@ -9,21 +9,21 @@
  * @param    (int|string) $post_id    The post ID this block is saved to.
  */
 
-use MC\App\Fields\Util;
-use MC\App\Media;
- 
+use DPS\App\Fields\Util;
+use DPS\App\Media;
+
 // Create id attribute allowing for custom "anchor" value.
 $id = 'testimonial-' . $block['id'];
-if( !empty($block['anchor']) ) {
+if (!empty($block['anchor'])) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'mc-testimonial';
-if( !empty($block['className']) ) {
+$className = 'dps-testimonial';
+if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
-if( !empty($block['align']) ) {
+if (!empty($block['align'])) {
     $className .= ' align' . $block['align'];
 }
 
@@ -36,12 +36,12 @@ $text_color       = get_field('text-color');
 
 $template = [
     [
-        'core/paragraph', 
+        'core/paragraph',
         [
-            'content' => 'Testimonial', 
+            'content' => 'Testimonial',
             'align' => 'left',
             'className'     => 'mc-testimonial__message',
-        ] 
+        ]
     ],
     [
         'core/heading',
@@ -63,22 +63,19 @@ $template = [
     ],
 ];
 
-$allowed_blocks = array( 'core/heading', 'core/paragraph' );
+$allowed_blocks = array('core/heading', 'core/paragraph');
 
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <blockquote class="testimonial-blockquote">
-    <InnerBlocks 
-        template="<?php echo esc_attr(wp_json_encode($template)); ?>"
-        allowedBlocks="<?php echo esc_attr(wp_json_encode($allowed_blocks)); ?>" 
-        templatLock="all"/>
+        <InnerBlocks template="<?php echo esc_attr(wp_json_encode($template)); ?>" allowedBlocks="<?php echo esc_attr(wp_json_encode($allowed_blocks)); ?>" templatLock="all" />
     </blockquote>
     <div class="testimonial-image">
-        <?php 
-            printf(
-                '<img src="%1$s">',
-                $image['url']
-            )
+        <?php
+        printf(
+            '<img src="%1$s">',
+            $image['url']
+        )
         ?>
     </div>
     <style type="text/css">

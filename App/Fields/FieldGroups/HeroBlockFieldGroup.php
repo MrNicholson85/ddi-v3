@@ -21,7 +21,7 @@ class HeroBlockFieldGroup extends RegisterFieldGroups
         register_block_type(MC_THEME_DIR . 'components/blocks/hero/block.json');
 
         register_extended_field_group([
-            'title'    => __('MC Hero', 'mc-starter'),
+            'title'    => __('MC Hero', 'dps-starter'),
             'fields'   => $this->getFields(),
             'location' => [
                 Location::if('block', 'acf/hero')

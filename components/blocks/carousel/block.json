@@ -2,7 +2,7 @@
     "name": "carousel",
     "title": "Carousel",
     "description": "A custom Carousel block.",
-    "style": "/build/styles/editor-styles.min.css",
+    "style": [ "file:/carousels.scss" ],
     "category": "dps_blocks",
     "icon": "slides",
     "keywords": ["carousel", "slider"],
@@ -21,7 +21,8 @@
             "link": false
         },
         "alignText": false,
-        "fullHeight": false
+        "fullHeight": false,
+        "jsx": true
     },
     "styles": [
         { "name": "default", "label": "Default", "isDefault": true },
@@ -37,5 +38,6 @@
     },
     "textdomain": "fifty-fifty",
 	"editorScript": "file:./carousel.js",
-	"editorStyle": "file:./carousel.css"
+	"editorStyle": "file:./index.css"
+
 }

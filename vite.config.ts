@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import VitePluginBrowserSync from 'vite-plugin-browser-sync';
 
 export default defineConfig({
   build: {
@@ -8,7 +7,7 @@ export default defineConfig({
         ['theme-scripts']: './assets/scripts/theme-scripts.ts',
         ['admin-scripts']: './assets/scripts/admin-scripts.ts',
         ['theme-styles']: './assets/styles/theme-styles.scss',
-        ['editor-styles']: './assets/styles/editor-styles.scss',
+        ['style-editor']: './assets/styles/style-editor.scss',
       },
       output: {
         dir: './build',
@@ -22,16 +21,7 @@ export default defineConfig({
     },
     sourcemap: true,
   },
-  plugins: [
-    VitePluginBrowserSync({
-      bs: {
-        ui: {
-          port: 8080
-        },
-        notify: false
-      }
-    })
-  ],
+  plugins: [],
   resolve: {
     alias: {
       'uikit-util': 'uikit/src/js/util',

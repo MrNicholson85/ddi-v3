@@ -2,31 +2,33 @@
 
 namespace DPS\App\Fields\FieldGroups;
 
+use DPS\App\Fields\Common;
 use DPS\App\Fields\FieldGroups\RegisterFieldGroups;
 use WordPlate\Acf\Fields\Accordion;
-use WordPlate\Acf\Fields\ColorPicker;
 use WordPlate\Acf\Location;
 use WordPlate\Acf\Fields\Image;
+use WordPlate\Acf\Fields\Repeater;
+use WordPlate\Acf\Fields\Textarea;
 
 /**
- * Class CarouselBlockFieldGroup
+ * Class TextFieldGroup
  *
  * @package DPS\App\Fields\PageBuilderFieldGroup
  */
-class TestimonialBlockFieldGroup extends RegisterFieldGroups
+class TextFieldGroup extends RegisterFieldGroups
 {
     /**
      * Register Field Group via Wordplate
      */
     public function registerFieldGroup()
     {
-        register_block_type(DPS_THEME_DIR . 'components/blocks/testimonial/block.json');
+        register_block_type(DPS_THEME_DIR . 'components/blocks/example-dynamic/block.json');
 
         register_extended_field_group([
-            'title'    => __('MC Testimonial', 'dps-starter'),
+            'title'    => __('DPS Text', 'dps-starter'),
             'fields'   => $this->getFields(),
             'location' => [
-                Location::if('block', 'acf/testimonial')
+                Location::if('block', 'acf/example-dynamic')
             ],
             'style' => 'default'
         ]);
@@ -39,11 +41,10 @@ class TestimonialBlockFieldGroup extends RegisterFieldGroups
      */
     public function getFields()
     {
-        return apply_filters('mc/field-group/testimonial/fields', [
-            Image::make('Image'),
-            Accordion::make(_('Color Setting')),
-            ColorPicker::make(_('Background Color')),
-            ColorPicker::make(_('Text Color'))
+        return apply_filters('dps/field-group/example-dynamic/fields', [
+            Textarea::make(__('Text Here', 'dps-starter')),
+            Accordion::make('Block Settings'),
+            Common::marginGroup()
         ]);
     }
 }

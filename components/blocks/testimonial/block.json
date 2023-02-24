@@ -2,7 +2,7 @@
     "name": "testimonial",
     "title": "Testimonial Block",
     "description": "A custom testimonial block.",
-    "style": [ "file:/test.css" ],
+    "style": [ "file:./testimonial.scss" ],
     "category": "dps_blocks",
     "icon": "testimonial",
     "keywords": ["testimonial", "text"],

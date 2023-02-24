@@ -19,10 +19,12 @@ use DPS\App\Fields\FieldGroups\SiteOptionsFieldGroup;
 use DPS\App\Fields\FieldGroups\PageBuilderFieldGroup;
 use DPS\App\Fields\FieldGroups\CarouselBlockFieldGroup;
 use DPS\App\Fields\FieldGroups\FiftyFiftyFieldGroup;
+use DPS\App\Fields\FieldGroups\TextFieldGroup;
 use DPS\App\Fields\FieldGroups\ProjectsBlockFieldGroup;
 use DPS\App\Blocks;
 
 use DPS\App\Blocks\RegisterBlocks;
+use DPS\App\Fields\FieldGroups\TestimonialBlockFieldGroup;
 
 /**
  * Define Theme Version
@@ -56,6 +58,8 @@ add_action('after_setup_theme', function () {
         ->add(new CarouselBlockFieldGroup())
         ->add(new ProjectsBlockFieldGroup())
         ->add(new FiftyFiftyFieldGroup())
+        ->add(new TextFieldGroup())
+        ->add(new TestimonialBlockFieldGroup())
         ->initialize();
 
     // Translation setup
@@ -71,9 +75,8 @@ add_action('after_setup_theme', function () {
     add_theme_support('post-thumbnails');
 
     //Add Gutenburg Theme Support
-    add_theme_support('responsive-embeds');
-    add_theme_support('wp-block-styles');
     add_theme_support('editor-styles');
+    add_editor_style('style-editor.scss');
 
     // Switch default core markup to output valid HTML5.
     add_theme_support('html5', [

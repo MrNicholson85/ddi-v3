@@ -20,6 +20,7 @@ class Scripts implements WordPressHooks
         add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
         add_action('wp_enqueue_scripts', [$this, 'enqueueStyles']);
         add_action('ddi_enqueue_uikit_js', [$this, 'enqueueUIKitScripts']);
+        add_action('ddi_enqueue_editor_styles', [$this, 'enqueueEditorStyles']);
     }
 
     /**
@@ -61,6 +62,19 @@ class Scripts implements WordPressHooks
         wp_enqueue_style(
             'dps-styles',
             get_template_directory_uri() . '/build/styles/theme-styles.min.css',
+            [],
+            THEME_VERSION
+        );
+    }
+
+    /**
+     * Load stylesheets for the Editor.
+     */
+    public function enqueueEditorStyles()
+    {
+        wp_enqueue_style(
+            'dps-editor-styles',
+            get_template_directory_uri() . '/build/styles/editor-styles.min.css',
             [],
             THEME_VERSION
         );
