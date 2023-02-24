@@ -40,21 +40,6 @@ composer dump-autoload
 9. [Sass Lint](https://github.com/sasstools/sass-lint)
 10. [TypeScript](https://www.typescriptlang.org/)
 
-## ACF Documentation
-
-- Wordplate Extended ACF is included as the means to build fields, field groups, reusable fields
-- Custom `ACF Utility Functions` are included in the theme to retrieve ACF data in a more effecient way: (https://github.com/ModernClimate/dps-wp-starter-theme/blob/master/doc/acf/README.md)
-
-## Extensions
-
-Check out the [Code Snippets Repo](https://github.com/ModernClimate/ad-code-snippets) for additional functionality.
-
-## Documentation
-
-- [ACF Utility Functions](https://github.com/ModernClimate/dps-wp-starter-theme/blob/master/doc/acf/UtilityFunctions.md)
-- [ACF Field Registration](https://github.com/ModernClimate/dps-wp-starter-theme/blob/master/doc/acf/FieldRegistration.md)
-- [Setting up autoformat on save in your code editor](https://github.com/ModernClimate/dps-wp-starter-theme/blob/master/doc/Autoformatting.md)
-
 ## Copyright and License
 
 The following resources are included or used in part within the theme package.
