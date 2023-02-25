@@ -21,6 +21,7 @@ class Scripts implements WordPressHooks
         add_action('wp_enqueue_scripts', [$this, 'enqueueStyles']);
         add_action('ddi_enqueue_uikit_js', [$this, 'enqueueUIKitScripts']);
         add_action('ddi_enqueue_editor_styles', [$this, 'enqueueEditorStyles']);
+        add_action('ddi_carousel_block_js', [$this, 'carouselBlockJs']);
     }
 
     /**
@@ -49,6 +50,19 @@ class Scripts implements WordPressHooks
         wp_enqueue_script(
             'uiKit-scripts',
             get_template_directory_uri() . "/node_modules/uikit/dist/js/uikit.min.js",
+            [],
+            true
+        );
+    }
+
+    /**
+     * Load scripts for the front end.
+     */
+    public function carouselBlockJs()
+    {
+        wp_enqueue_script(
+            'carousel-scripts',
+            get_template_directory_uri() . "/components/blocks/carousel/index.js",
             [],
             true
         );

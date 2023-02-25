@@ -11,6 +11,7 @@
 
 use DPS\App\Fields\Util;
 use DPS\App\Media;
+use DPS\App\Fields\ACF;
 
 // Create id attribute allowing for custom "anchor" value.
 $id = 'testimonial-' . $block['id'];
@@ -28,10 +29,11 @@ if (!empty($block['align'])) {
 }
 
 // Load values and assign defaults.
-$image            = get_field('image');
-$background_color = get_field('background-color');
-$text_color       = get_field('text-color');
-
+$data = $block['data'];
+$image            = ACF::getField('image', $data);
+$image_data       = Media::getAttachmentByID($image);
+$background_color = get_field('background_color');
+$text_color       = get_field('text_color');
 
 
 $template = [
@@ -74,7 +76,7 @@ $allowed_blocks = array('core/heading', 'core/paragraph');
         <?php
         printf(
             '<img src="%1$s">',
-            $image['url']
+            $image_data->url
         )
         ?>
     </div>

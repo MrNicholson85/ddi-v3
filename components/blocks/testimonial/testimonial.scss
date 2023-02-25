@@ -1,4 +1,8 @@
 .mc-testimonial div {
-    height: 100%;
-    background-repeat: no-repeat;
-} 
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.mc-testimonial .module__image img {
+  width: 100%;
+}
