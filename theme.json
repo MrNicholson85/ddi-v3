@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Cole",
+                    "slug": "color-cole",
+                    "color": "rgba(33, 30, 38, 1)"
+                },
+                {
+                    "name": "Blue",
+                    "slug": "color-blue",
+                    "color": "rgba(3, 119, 191, 1)"
+                },
+                {
+                    "name": "Orange",
+                    "slug": "color-orange",
+                    "color": "rgba(242, 176, 53, 1)"
+                },
+                {
+                    "name": "Brown",
+                    "slug": "color-brown",
+                    "color": "rgba(140, 82, 70, 1)"
+                },
+                {
+                    "name": "White",
+                    "slug": "color-white",
+                    "color": "rgba(255, 255, 255, 1)"
+                },
+                {
+                    "name": "Block",
+                    "slug": "color-block",
+                    "color": "rgba(0, 0, 0, 1)"
+                }
+            ]
+        },
+        "layout": {
+			"contentSize": "840px",
+			"wideSize": "1400px"
+		}
+    }
+}

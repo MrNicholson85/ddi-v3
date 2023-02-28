@@ -15,17 +15,19 @@
     <a href="#primary" class="screen-reader-text"><?php _e('Skip to Main Content', 'dps-starter'); ?></a>
 
     <header id="masthead" class="header" role="banner">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="uk-container uk-container-large">
-                <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false" aria-label="<?php _e('Toggle navigation', 'dps-starter'); ?>">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
 
-                <?php
-                // Loads the menu/primary.php template.
-                get_template_part('menu/primary');
-                ?>
-            </div>
-        </nav>
+            <nav class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <div uk-navbar>
+
+                        <?php
+                        // Loads the menu/primary.php template.
+                        get_template_part('menu/primary');
+                        ?>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header><!-- .header -->

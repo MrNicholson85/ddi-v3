@@ -21,6 +21,7 @@ use DPS\App\Fields\FieldGroups\CarouselBlockFieldGroup;
 use DPS\App\Fields\FieldGroups\FiftyFiftyFieldGroup;
 use DPS\App\Fields\FieldGroups\TextFieldGroup;
 use DPS\App\Fields\FieldGroups\ProjectsBlockFieldGroup;
+use DPS\App\Fields\FieldGroups\HeroBlockFieldGroup;
 use DPS\App\Blocks;
 
 use DPS\App\Blocks\RegisterBlocks;
@@ -60,6 +61,7 @@ add_action('after_setup_theme', function () {
         ->add(new FiftyFiftyFieldGroup())
         ->add(new TextFieldGroup())
         ->add(new TestimonialBlockFieldGroup())
+        ->add(new HeroBlockFieldGroup())
         ->initialize();
 
     // Translation setup

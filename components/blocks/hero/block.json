@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "hero",
+	"version": "0.1.0",
+	"title": "Hero",
+	"category": "dps_blocks",
+	"icon": "image",
+	"description": "Full height hero block",
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": true,
+		"color": {
+			"text": true,
+            "background": true
+		}
+	},
+	"acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+	"textdomain": "hero",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor.css",
+	"style": "file:./editor.css",
+    "styles": [
+        { "name": "default", "label": "Default", "isDefault": true },
+        { "name": "full-width", "label": "Full Width" },
+        { "name": "short-hero-full-width", "label": "Short Hero Full Width" },
+        { "name": "short-hero-default", "label": "Short Hero Default" }
+    ],
+	"example": {
+        "attributes": {
+            "mode": "preview"
+        }
+    }
+}

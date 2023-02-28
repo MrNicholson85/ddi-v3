@@ -1,1 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300&display=swap');
+$oswald: 'Oswald', sans-serif;
+$robotoCon: 'Roboto Condensed', sans-serif;
 // Font Style
+
+h1,
+.h1 {
+  font-family: $oswald;
+  font-size: 55px;
+}
+
+h2,
+.h2 {
+  font-family: $oswald;
+  font-size: 35px;
+}
+
+.p,
+p {
+  font-family: $robotoCon;
+}

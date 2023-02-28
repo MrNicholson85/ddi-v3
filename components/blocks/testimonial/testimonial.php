@@ -30,11 +30,10 @@ if (!empty($block['align'])) {
 
 // Load values and assign defaults.
 $data = $block['data'];
-$image            = ACF::getField('image', $data);
+$image            = get_Field('image');
 $image_data       = Media::getAttachmentByID($image);
 $background_color = get_field('background_color');
 $text_color       = get_field('text_color');
-
 
 $template = [
     [
@@ -72,23 +71,13 @@ $allowed_blocks = array('core/heading', 'core/paragraph');
     <blockquote class="testimonial-blockquote">
         <InnerBlocks template="<?php echo esc_attr(wp_json_encode($template)); ?>" allowedBlocks="<?php echo esc_attr(wp_json_encode($allowed_blocks)); ?>" templatLock="all" />
     </blockquote>
-    <div class="testimonial-image">
-        <?php
-        printf(
-            '<img src="%1$s">',
-            $image_data->url
-        )
-        ?>
+    <div class="testimonial-image" style="background-image: url('<?php echo $image['url'] ?>');">
+
     </div>
     <style type="text/css">
         #<?php echo $id; ?> {
             background: <?php echo $background_color; ?>;
             color: <?php echo $text_color; ?>;
-            display: grid;
-            grid-template-columns: 40% 40%;
-            gap: 20%;
-            align-content: center;
-            align-items: center;
         }
     </style>
 </div>

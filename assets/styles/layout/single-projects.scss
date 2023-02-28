@@ -1,0 +1,9 @@
+.single-projects {
+  &.logged-in {
+    .has-overlay {
+      &::before {
+        margin-top: 32px;
+      }
+    }
+  }
+}
