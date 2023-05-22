@@ -1,21 +1,20 @@
 {
-    "name": "testimonial",
-    "title": "Testimonial Block",
-    "description": "A custom testimonial block.",
-    "style": [ "file:./testimonial.css" ],
-    "category": "dps_blocks",
-    "icon": "testimonial",
-    "keywords": ["testimonial", "text"],
+  "name": "testimonial",
+  "title": "Testimonial Block",
+  "description": "A custom testimonial block.",
+  "style": ["file:./testimonial.css"],
+  "category": "dps_blocks",
+  "icon": "testimonial",
+  "keywords": ["testimonial", "text"],
+  "mode": "preview",
+  "acf": {
     "mode": "preview",
-    "acf": {
-        "mode": "preview",
-        "renderTemplate": "testimonial.php"
-    },
-    "support": {
-        "algin": "left",
-        "anchor": true,
-		"customClassName": true,
-        "jsx": true
-    }
-    
+    "renderTemplate": "testimonial.php"
+  },
+  "support": {
+    "algin": "left",
+    "anchor": true,
+    "customClassName": true,
+    "jsx": true
+  }
 }

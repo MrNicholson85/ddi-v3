@@ -1,43 +1,42 @@
 {
-    "name": "carousel",
-    "title": "Carousel",
-    "description": "A custom Carousel block.",
-    "style": [ "file:/style.css" ],
-    "category": "dps_blocks",
-    "icon": "slides",
-    "keywords": ["carousel", "slider"],
-    "acf": {
-        "mode": "preview",
-        "renderTemplate": "carousel.php"
+  "name": "carousel",
+  "title": "Carousel",
+  "description": "A custom Carousel block.",
+  "style": ["file:/style.css"],
+  "category": "dps_blocks",
+  "icon": "slides",
+  "keywords": ["carousel", "slider"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "carousel.php"
+  },
+  "align": "center",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "alignContent": false,
+    "color": {
+      "text": false,
+      "background": true,
+      "link": false
     },
-    "align": "center",
-    "supports": {
-        "align": false,
-        "anchor": false,
-        "alignContent": false,
-        "color": {
-            "text": false,
-            "background": true,
-            "link": false
-        },
-        "alignText": false,
-        "fullHeight": false,
-        "jsx": true
-    },
-    "styles": [
-        { "name": "default", "label": "Default", "isDefault": true },
-        { "name": "red", "label": "Red" },
-        { "name": "green", "label": "Green" },
-        { "name": "blue", "label": "Blue" }
-    ],
-    "attributes": {
-        "backgroundColor": {
-            "type": "string",
-            "default": "tertiary"
-        }
-    },
-    "textdomain": "fifty-fifty",
-	"editorScript": "file:./index.js",
-	"editorStyle": "file:./style.css"
-
+    "alignText": false,
+    "fullHeight": false,
+    "jsx": true
+  },
+  "styles": [
+    { "name": "default", "label": "Default", "isDefault": true },
+    { "name": "red", "label": "Red" },
+    { "name": "green", "label": "Green" },
+    { "name": "blue", "label": "Blue" }
+  ],
+  "attributes": {
+    "backgroundColor": {
+      "type": "string",
+      "default": "tertiary"
+    }
+  },
+  "textdomain": "fifty-fifty",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style.css"
 }

@@ -30,9 +30,9 @@ import './editor.scss';
  * @return {WPElement} Element to render.
  */
 export default function Edit() {
-	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Example Dynamic – hello from the editor!', 'example-dynamic' ) }
-		</p>
-	);
+  return (
+    <p {...useBlockProps()}>
+      {__('Example Dynamic – hello from the editor!', 'example-dynamic')}
+    </p>
+  );
 }
