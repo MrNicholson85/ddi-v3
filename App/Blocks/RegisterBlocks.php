@@ -34,8 +34,8 @@ class RegisterBlocks implements WordPressHooks
         wp_register_script(
             $this->block_key,
             $dir_path . 'build/index.js',
-            $asset_file['dependencies'],
-            $asset_file['version']
+            // $asset_file['dependencies'],
+            // $asset_file['version']
         );
 
         wp_register_style(
