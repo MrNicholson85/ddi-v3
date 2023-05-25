@@ -2,7 +2,7 @@
   "name": "carousel",
   "title": "Carousel",
   "description": "A custom Carousel block.",
-  "style": ["file:/style.css"],
+  "style": "file:./style.css",
   "category": "dps_blocks",
   "icon": "slides",
   "keywords": ["carousel", "slider"],
@@ -25,10 +25,23 @@
     "jsx": true
   },
   "styles": [
-    { "name": "default", "label": "Default", "isDefault": true },
-    { "name": "red", "label": "Red" },
-    { "name": "green", "label": "Green" },
-    { "name": "blue", "label": "Blue" }
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "red",
+      "label": "Red"
+    },
+    {
+      "name": "green",
+      "label": "Green"
+    },
+    {
+      "name": "blue",
+      "label": "Blue"
+    }
   ],
   "attributes": {
     "backgroundColor": {
@@ -36,7 +49,7 @@
       "default": "tertiary"
     }
   },
-  "textdomain": "fifty-fifty",
+  "textdomain": "carousel",
   "editorScript": "file:./index.js",
-  "editorStyle": "file:./style.css"
+  "editorStyle": "file:/dist/output.css"
 }

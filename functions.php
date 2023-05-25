@@ -25,6 +25,7 @@ use DPS\App\Fields\FieldGroups\HeroBlockFieldGroup;
 use DPS\App\Blocks;
 
 use DPS\App\Blocks\RegisterBlocks;
+use DPS\App\Fields\FieldGroups\ContentBlockFieldGroup;
 use DPS\App\Fields\FieldGroups\TestimonialBlockFieldGroup;
 
 /**
@@ -62,6 +63,7 @@ add_action('after_setup_theme', function () {
         ->add(new TextFieldGroup())
         ->add(new TestimonialBlockFieldGroup())
         ->add(new HeroBlockFieldGroup())
+        ->add(new ContentBlockFieldGroup())
         ->initialize();
 
     // Translation setup

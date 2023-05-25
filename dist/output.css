@@ -526,6 +526,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .block {
   display: block;
 }
@@ -534,11 +538,36 @@ video {
   display: grid;
 }
 
-.border {
-  border-width: 1px;
+.h-\[840px\] {
+  height: 840px;
 }
 
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
 }

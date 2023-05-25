@@ -8,7 +8,6 @@ export default defineConfig({
         ['admin-scripts']: './assets/scripts/admin-scripts.ts',
         ['theme-styles']: './assets/styles/theme-styles.scss',
         ['style-editor']: './assets/styles/style-editor.scss',
-        ['ddi-tailewindcss']: './dist/output.css',
       },
       output: {
         dir: './build',

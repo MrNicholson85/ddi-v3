@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ACF Module: Image
+ * ACF Module: Carousel
  *
  * @global $data
  */
@@ -10,7 +10,10 @@ use DPS\App\Fields\ACF;
 use DPS\App\Media;
 use DPS\App\Fields\Util;
 
-$items = ACF::getRowsLayout('carousel-items', $data);
+
+$items = ACF::getRowsLayout('carousel_items', $data);
+
+print_r($items);
 
 if (!$items) {
     return;
@@ -24,7 +27,7 @@ $show_indicators = ACF::getField('show-carousel-indicators', $data, 'false');
 <div class="module carousel">
     <div class="uk-container uk-container-large">
         <div ukgrid>
-            <div class="uk-slideshow uk-width-1-2 uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-animation="<?php echo esc_attr($animation_type) ?>">
+            <div class="uk-slideshow uk-width-full uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-animation="<?php echo esc_attr($animation_type) ?>">
                 <ul class="uk-slideshow-items">
                     <?php
                     foreach ($items as $item) {
