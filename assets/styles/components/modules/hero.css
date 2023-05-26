@@ -1,3 +1,9 @@
-.hero {
-  @apply h-[800px];
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layout components {
+  .hero {
+    @apply h-[800px];
+  }
 }
