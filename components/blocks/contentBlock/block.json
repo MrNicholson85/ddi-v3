@@ -2,7 +2,8 @@
   "name": "content",
   "title": "Content Block",
   "description": "A custom Content block.",
-  "style": ["file:/test.css"],
+  "style": ["file:/style.css"],
+  "editorStyle": "/dist/output.css",
   "category": "dps_blocks",
   "icon": "text-page",
   "keywords": ["content", "text"],
@@ -11,7 +12,6 @@
     "renderTemplate": "content.php"
   },
   "support": {
-    "jsx": true,
     "align": false,
     "customClassName": true
   }

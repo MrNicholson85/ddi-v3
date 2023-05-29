@@ -4,6 +4,16 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .wp-block .wp-block-acf-hero {
+    @apply text-left;
+  }
+}
+
 .wp-block .wp-block-acf-hero {
   align-content: center;
   background-position: center;
@@ -39,6 +49,7 @@
   width: 60%;
   z-index: 1;
 }
+
 .wp-block .wp-block-acf-hero.is-style-short-hero-default,
 .wp-block.wp-block-acf-hero.is-style-short-hero-default {
   height: 50vh !important;

@@ -23,7 +23,7 @@ class Carousel extends Layouts
     public function fields()
     {
         return apply_filters(
-            'mc/layout/carousel',
+            'dps/layout/carousel',
             Layout::make(__('Carousel'), 'carousel')
                 ->layout('block')
                 ->fields([
@@ -37,35 +37,35 @@ class Carousel extends Layouts
                                 ->returnFormat('array'),
                         ]),
                     $this->optionsTab(),
-                    Select::make(__('Animation Type', 'dps-starter'), 'carousel-animation-type')
+                    Select::make(__('Animation Type'), 'carousel-animation-type')
                         ->choices([
-                            'fade'  => __('Fade', 'dps-starter'),
-                            'pull'  => __('Pull', 'dps-starter'),
-                            'push'  => __('Push', 'dps-starter'),
-                            'scale' => __('Scale', 'dps-starter'),
-                            'slide' => __('Slide', 'dps-starter'),
+                            'fade'  => __('Fade'),
+                            'pull'  => __('Pull'),
+                            'push'  => __('Push'),
+                            'scale' => __('Scale'),
+                            'slide' => __('Slide'),
                         ])
                         ->defaultValue('slide')
                         ->returnFormat('value')
                         ->wrapper([
                             'width' => '33.33'
                         ]),
-                    ButtonGroup::make(__('Enable Arrow Navigation', 'dps-starter'), 'show-carousel-arrows-nav')
+                    ButtonGroup::make(__('Enable Arrow Navigation'), 'show-carousel-arrows-nav')
                         ->choices([
-                            'true'  => __('Enable', 'dps-starter'),
-                            'false' => __('Disable', 'dps-starter'),
+                            'true'  => __('Enable'),
+                            'false' => __('Disable'),
                         ])
-                        ->instructions(__('Enabling will show a previous and next navigation arrow overlayed on the carousel.', 'dps-starter'))
+                        ->instructions(__('Enabling will show a previous and next navigation arrow overlayed on the carousel.'))
                         ->defaultValue('true')
                         ->wrapper([
                             'width' => '33.33'
                         ]),
-                    ButtonGroup::make(__('Enable Indicators', 'dps-starter'), 'show-carousel-indicators')
+                    ButtonGroup::make(__('Enable Indicators'), 'show-carousel-indicators')
                         ->choices([
-                            'true'  => __('Enable', 'dps-starter'),
-                            'false' => __('Disable', 'dps-starter'),
+                            'true'  => __('Enable'),
+                            'false' => __('Disable'),
                         ])
-                        ->instructions(__('Enabling will show a dot navigation button group.', 'dps-starter'))
+                        ->instructions(__('Enabling will show a dot navigation button group.'))
                         ->defaultValue('false')
                         ->wrapper([
                             'width' => '33.33'

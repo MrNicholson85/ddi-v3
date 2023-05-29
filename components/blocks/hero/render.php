@@ -22,7 +22,9 @@ $overlay_class = '';
 $bg_styles = '';
 
 if ($overlay == true) {
-	$overlay_class = 'has-overlay';
+	$overlay_class = 'has-overlay relative overflow-hidden';
+} else {
+	$overlay_class = 'relative';
 }
 
 if (!empty($image)) {
@@ -48,20 +50,22 @@ if (!empty($block['anchor'])) {
 $className = ['dps-hero'];
 ?>
 <div <?php echo $wrapper_attributes; ?> <?php echo $bg_styles ?>>
-	<?php
-	if (!empty($title)) {
-		printf(
-			'<%1$s>%2$s</%1$s>',
-			$heading_type,
-			$title
-		);
-	}
+	<div class="hero-content z-10 w-[500px]">
+		<?php
+		if (!empty($title)) {
+			printf(
+				'<%1$s class="text-[56px]">%2$s</%1$s>',
+				$heading_type,
+				$title
+			);
+		}
 
-	if (!empty($copy)) {
-		printf(
-			'<p class="wp-block-acf-hero__text">%1$s</p>',
-			$copy
-		);
-	}
-	?>
+		if (!empty($copy)) {
+			printf(
+				'<p class="p-0 mb-0 m-auto text-[48px] text-center flex justify-center">%1$s</p>',
+				$copy
+			);
+		}
+		?>
+	</div>
 </div>

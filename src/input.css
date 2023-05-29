@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  @apply h-[800px];
+}
+
+.wp-block .content-block,
+.content-block {
+  @apply text-blue-600;
+}
+
+.ddi_container {
+  @apply w-[375px] md:w-[768px] lg:w-[1440px] mx-auto;
+}
+
+.ddi_container_full {
+  @apply w-full;
+}
+
+/*
+  Heading Styles
+*/
+h1,
+.h1 {
+  @apply text-6xl;
+}
+
+/*
+  Button Styles
+*/

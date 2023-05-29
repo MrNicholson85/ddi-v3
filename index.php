@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<div class="uk-container uk-container-large">
+<div class="">
     <div uk-grid>
         <div id="primary" class="uk-width-1-1@s">
             <?php

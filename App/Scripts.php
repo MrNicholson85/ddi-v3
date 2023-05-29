@@ -79,6 +79,13 @@ class Scripts implements WordPressHooks
             [],
             THEME_VERSION
         );
+
+        wp_enqueue_style(
+            'dps-tailwindcss',
+            get_template_directory_uri() . '/dist/output.css',
+            [],
+            THEME_VERSION
+        );
     }
 
     /**

@@ -36,10 +36,10 @@ do_action('mc/styles/margin', $block_id, $block);
     <div id="<?php echo esc_attr($block_id); ?>" class="<?php echo esc_attr($className); ?>">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-1@m">
+            <ul class="h-[840px] uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-1@m">
                 <?php foreach ($carousel as $slides) :  ?>
                     <li>
-                        <img src="<?php echo $slides['image']['url'] ?>" width="" height="" alt="">
+                        <img class="prose slider-image bg-cover bg-center" src="<?php echo $slides['image']['url'] ?>" width="" height="" alt="">
                         <div class="uk-position-center uk-panel">
                             <h1><?php echo $slides['caption'] ?></h1>
                         </div>

@@ -68,7 +68,7 @@ $allowed_blocks = array('core/heading', 'core/paragraph');
 
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-    <blockquote class="testimonial-blockquote">
+    <blockquote class="testimonial-blockquote bg-slate-500">
         <InnerBlocks template="<?php echo esc_attr(wp_json_encode($template)); ?>" allowedBlocks="<?php echo esc_attr(wp_json_encode($allowed_blocks)); ?>" templatLock="all" />
     </blockquote>
     <div class="testimonial-image" style="background-image: url('<?php echo $image['url'] ?>');">
