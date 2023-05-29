@@ -116,7 +116,9 @@ class Util
 
         $image      = ACF::getField('background_image', $data);
         $attachment = !empty($image) ? Media::getAttachmentByID($image) : false;
-        $src        = ACF::getField($size, $attachment->sizes, $attachment->url);
+        if($image) {
+            $src        = ACF::getField($size, $attachment->sizes, $attachment->url);
+        }
 
         // build out our inline background styles
         $styles = sprintf(

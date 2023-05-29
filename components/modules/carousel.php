@@ -13,8 +13,6 @@ use DPS\App\Fields\Util;
 
 $items = ACF::getRowsLayout('carousel_items', $data);
 
-print_r($items);
-
 if (!$items) {
     return;
 }
@@ -34,10 +32,6 @@ $show_indicators = ACF::getField('show-carousel-indicators', $data, 'false');
                         printf(
                             '<li>
                                 %1$s
-                                <div class="uk-position-center uk-position-small uk-text-center uk-light">
-                                    <h2 class="uk-margin-remove">Center</h2>
-                                    <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
                             </li>',
                             Util::getImageHTML(Media::getAttachmentByID($item['image']), 'full', ['uk-cover' => true])
                         );

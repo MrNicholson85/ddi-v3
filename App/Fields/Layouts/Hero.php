@@ -46,12 +46,17 @@ class Hero extends Layouts
                                 ->previewSize('thumbnail'),
                             ColorPicker::make(__('Color', 'dps-starter'))
                                 ->wrapper([
-                                    'width' => '50'
+                                    'width' => '33'
                                 ]),
                             TrueFalse::make(__('Background Overlay', 'dps-starter'), 'overlay')
                                 ->stylisedUi()
                                 ->wrapper([
-                                    'width' => '50'
+                                    'width' => '34'
+                                ]),
+                            TrueFalse::make(__('Full Width', 'dps-starter'), 'has_full_width')
+                                ->stylisedUi()
+                                ->wrapper([
+                                    'width' => '33'
                                 ]),
                             Select::make(__('Repeat', 'dps-starter'))
                                 ->choices([
