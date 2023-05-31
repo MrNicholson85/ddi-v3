@@ -30,3 +30,8 @@ h1,
 /*
   Button Styles
 */
+
+button,
+.primary-btn {
+  @apply border-solid;
+}
