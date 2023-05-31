@@ -12,11 +12,11 @@
 }
 
 .ddi_container {
-  @apply w-[375px] md:w-[768px] lg:w-[1440px] mx-auto
+  @apply w-[375px] md:w-[768px] lg:w-[1440px] mx-auto;
 }
 
 .ddi_container_full {
-  @apply w-full
+  @apply w-full;
 }
 
 /*
@@ -24,7 +24,7 @@
 */
 h1,
 .h1 {
-  @apply text-6xl
+  @apply text-6xl;
 }
 
 /*
@@ -33,5 +33,5 @@ h1,
 
 button,
 .primary-btn {
-  @apply border-solid
+  @apply border-solid;
 }
