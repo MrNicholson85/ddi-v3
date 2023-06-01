@@ -17,7 +17,7 @@
     <header id="masthead" class="header" role="banner">
         <div class="ddi_container">
             <div class="flex justify-between">
-                <div>
+                <div class="logo">
                     <a class="uppercase font-bold text-xl" href="/">DarrylDidIt</a>
                 </div>
                 <nav>

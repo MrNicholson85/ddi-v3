@@ -1,8 +1,23 @@
 .header {
+  color: $white;
   padding: 40px 0;
 
-  .navbar-nav {
+  .logo {
+    color: $theme-orange;
+  }
+
+  ul.navbar-nav {
     display: flex;
     gap: 15px;
+
+    li.menu-item {
+      border-bottom: transparent 2px solid;
+      padding-bottom: 5px;
+
+      &:hover {
+        border-bottom: $theme-orange 2px solid;
+        color: $theme-orange;
+      }
+    }
   }
 }

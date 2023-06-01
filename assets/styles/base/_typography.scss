@@ -19,3 +19,24 @@ h2,
 p {
   font-family: $robotoCon;
 }
+
+.ddi-btn-primary {
+  background-color: transparent;
+  border: $theme-orange solid 2px;
+  color: $theme-orange;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.3s;
+  width: 200px;
+
+  &:hover {
+    background-color: rgba($color: $theme-orange, $alpha: 0.5);
+    color: $white;
+  }
+}

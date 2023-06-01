@@ -38,7 +38,7 @@ $has_full_width = ACF::getField('background_has_full_width', $data);
             <?php if ($button) {
                 echo '<div class="module__link">';
                 printf(
-                    '<a class="flex mx-auto justify-center w-[200px] bg-blue-900 p-4 text-center" href="%2$s" target="%3$s">%1$s</a>',
+                    '<a class="ddi-btn-primary" href="%2$s" target="%3$s">%1$s</a>',
                     $button['title'],
                     $button['url'],
                     $button['target']
