@@ -15,19 +15,17 @@
     <a href="#primary" class="screen-reader-text"><?php _e('Skip to Main Content', 'dps-starter'); ?></a>
 
     <header id="masthead" class="header" role="banner">
-        <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light">
-
-            <nav class="uk-navbar-container">
-                <div class="uk-container uk-container-expand">
-                    <div uk-navbar>
-
-                        <?php
-                        // Loads the menu/primary.php template.
-                        get_template_part('menu/primary');
-                        ?>
-
-                    </div>
+        <div class="ddi_container">
+            <div class="flex justify-between">
+                <div>
+                    <a class="uppercase font-bold text-xl" href="/">DarrylDidIt</a>
                 </div>
-            </nav>
+                <nav>
+                    <?php
+                    // Loads the menu/primary.php template.
+                    get_template_part('menu/primary');
+                    ?>
+                </nav>
+            </div>
         </div>
     </header><!-- .header -->

@@ -1,3 +1,8 @@
 .header {
-  position: fixed;
+  padding: 40px 0;
+
+  .navbar-nav {
+    display: flex;
+    gap: 15px;
+  }
 }

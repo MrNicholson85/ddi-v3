@@ -27,7 +27,8 @@ class PageBuilderFieldGroup extends RegisterFieldGroups
             'title'    => __('Page Builder', 'dps-starter'),
             'fields'   => $this->getFields(),
             'location' => [
-                Location::if('page_template', 'templates/page-builder.php')
+                Location::if('page_template', 'templates/page-builder.php'),
+                Location::if('post_type', 'projects')
             ],
             'style' => 'default'
         ]);

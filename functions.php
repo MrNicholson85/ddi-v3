@@ -80,7 +80,7 @@ add_action('after_setup_theme', function () {
 
     //Add Gutenburg Theme Support
     add_theme_support('editor-styles');
-    add_editor_style('style-editor.scss');
+    add_editor_style('style-editor.css');
 
     // Switch default core markup to output valid HTML5.
     add_theme_support('html5', [

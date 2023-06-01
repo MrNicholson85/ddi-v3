@@ -3,16 +3,7 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  .wp-block .wp-block-acf-hero {
-    @apply text-left;
-  }
-}
+@import url('/dist/output.css');
 
 .wp-block .wp-block-acf-hero {
   align-content: center;

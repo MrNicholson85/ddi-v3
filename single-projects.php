@@ -11,18 +11,9 @@
  * @package DPS
  */
 
-get_header(); ?>
+ get_header();
 
-<div id="primary" class="uk-width-1-1@s">
-
-    <?php
-    while (have_posts()) {
-        the_post();
-        // Loads the content/singular/page.php template.
-        get_template_part('content/singular/' . get_post_type());
-    }
-    ?>
-</div><!-- /#primary -->
-
-
-<?php get_footer();
+ // hook: App/Fields/Modules/outputFlexibleModules()
+ do_action('dps/modules/output', get_the_ID());
+ 
+ get_footer();

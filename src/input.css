@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero {
-  @apply h-[800px];
-}
-
 .wp-block .content-block,
 .content-block {
   @apply text-blue-600;
@@ -24,7 +20,7 @@
 */
 h1,
 .h1 {
-  @apply text-6xl;
+  @apply text-4xl md:text-5xl lg:text-8xl;
 }
 
 /*
